@@ -6,7 +6,6 @@ import '../utils/app_images.dart';
 import 'active_and_inActive_drawer_item.dart';
 import 'drawer_items_list_view.dart';
 import 'user_info_lit_title.dart';
-
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
