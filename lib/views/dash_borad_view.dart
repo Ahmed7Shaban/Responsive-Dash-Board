@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../utils/size_config.dart';
 import '../widget/AdaptiveLayoutWidget/adaptive_layout_widget.dart';
+import '../widget/custom_drawer.dart';
 import 'layouts/dash_board_desktop_layout.dart';
 import 'layouts/dash_board_mobile_layout.dart';
 import 'layouts/dash_board_tablet_layout.dart';
@@ -39,7 +40,9 @@ class _DashBoradViewState extends State<DashBoradView> {
               ),
             )
           : null,
-      drawer: Drawer(),
+      drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet
+          ? const CustomDrawer()
+          : null,
       backgroundColor: const Color(0xFFF7F9FA),
       body: AdaptiveLayout(
         mobileLayout: (context) => const DashBoardMobileLayout(),
