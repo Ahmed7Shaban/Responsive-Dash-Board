@@ -8,7 +8,6 @@ A fully responsive dashboard application built using **Flutter**. This project i
 - **Interactive Charts**: Displays data using charts that can be navigated.
 - **User-friendly Navigation**: Easy to use, with an intuitive UI.
 - **Customizable Widgets**: Widgets that can be easily modified to fit the needs of any dashboard.
-- **Real-time Updates**: Dynamic updates for the latest data.
 
 ## Technologies
 
@@ -34,12 +33,4 @@ To run this project, you'll need the following installed on your local machine:
    cd Responsive_Dash_Board
 
 
-lib/
-├── main.dart               # Entry point of the application
-├── responsive_layout.dart   # Manages different screen sizes
-├── dashboard_screen.dart    # Main screen of the dashboard
-├── widgets/
-│   ├── chart_widget.dart    # Custom chart widget
-│   └── other_widgets.dart   # Other custom widgets
-└── services/
-    └── api_service.dart     # API service for fetching data
+
